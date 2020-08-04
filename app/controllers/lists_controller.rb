@@ -1,5 +1,5 @@
-class ListController < ApplicationController
-  before_action :get_list, only: %i(show update destroy edit)
+class ListsController < ApplicationController
+  # before_action :get_list, only: %i(show update destroy edit)
 
   def index
     @lists = List.all
@@ -33,13 +33,13 @@ class ListController < ApplicationController
   def show
   end
 
-  private
+  # private
 
-  def get_list
-    @list = List.find(params[:id])
-  end
+  # def get_list
+  #   @list = List.find(params[:id])
+  # end
 
-  def list_params
-    params.require(:list).permit(:title, :description, :private, :favorit, :done)
-  end
+  # def list_params
+  #   params.require(:list).permit(:title, :description, :private, :favorit, :done)
+  # end
 end

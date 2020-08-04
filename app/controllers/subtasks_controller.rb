@@ -1,4 +1,4 @@
-class SubtaskController < ApplicationController
+class SubtasksController < ApplicationController
   def index
     @subtasks = Subtask.all
   end
