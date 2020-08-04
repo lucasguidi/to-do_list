@@ -1,24 +1,9 @@
 Rails.application.routes.draw do
-  get 'subtask/new'
-  get 'subtask/create'
-  get 'subtask/index'
-  get 'subtask/destroy'
-  get 'subtask/edit'
-  get 'subtask/update'
-  get 'subtask/show'
-  get 'task/new'
-  get 'task/create'
-  get 'task/index'
-  get 'task/destroy'
-  get 'task/edit'
-  get 'task/update'
-  get 'task/show'
-  get 'list/index'
-  get 'list/new'
-  get 'list/create'
-  get 'list/destroy'
-  get 'list/edit'
-  get 'list/update'
-  get 'list/show'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :subtasks
+
+  resources :tasks
+
+  resources :lists
+
+  root to: redirect('lists/index')
 end
