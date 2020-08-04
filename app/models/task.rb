@@ -4,4 +4,6 @@ class Task < ApplicationRecord
   has_many :subtasks
 
   validates :title, presence: true, uniqueness: true
+
+  validates :description, presence: true
 end
