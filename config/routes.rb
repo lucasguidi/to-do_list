@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'subtask/new'
+  get 'subtask/create'
+  get 'subtask/index'
+  get 'subtask/destroy'
+  get 'subtask/edit'
+  get 'subtask/update'
+  get 'subtask/show'
   get 'task/new'
   get 'task/create'
   get 'task/index'
