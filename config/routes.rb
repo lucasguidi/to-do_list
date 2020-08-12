@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/info'
+  get 'pages/index'
+  get 'pages/contact'
   
   devise_for :users
 
@@ -9,5 +11,5 @@ Rails.application.routes.draw do
 
   resources :lists
 
-  root to: redirect('/pages/info')
+  root to: redirect('/pages/index')
 end
