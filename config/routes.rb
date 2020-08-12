@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
   resources :lists
 
+  resources :users, only: [:new, :create]
+
   root to: redirect('/pages/index')
 end
