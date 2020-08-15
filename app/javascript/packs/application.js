@@ -4,7 +4,7 @@
 // that code so it'll be compiled.
 
 //= require jquery
-//= require jquery/ujs
+//= require jquery-ujs
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree
